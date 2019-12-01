@@ -11,8 +11,11 @@ Reference: https://andela.com/insights/configuring-vim-and-tmux-to-boost-your-pr
 ## Tmux Usage
 纵向分割页面: `ctrl+a`然后`|`
 横向分割页面: `ctrl+a`然后`-`
+选择下一个面板： `ctral+a`然后`o`
 ## vim usage
 打开vim以后，快捷键如下：
 使用ctrl+hjkl移动窗口。
 在NerdTree中，使用`o`打开文件，使用`i`打开上下分割的窗口，使用`s`打开左右分割窗口。
 
+## 添加拓展
+[Markdown](./markdown.preview)

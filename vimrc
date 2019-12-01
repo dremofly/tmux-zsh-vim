@@ -214,6 +214,7 @@ Plug 'ryanoasis/vim-devicons'
 
 "}}
 
+Plug 'iamcco/markdown-preview.vim'
 " Install all plugins if this is the firs load
 if exists('s:first_init')
   PlugInstall
