@@ -7,8 +7,11 @@ Plug 'iamcco/markdown-preview.vim'
 PlugInstall
 ```
 
-本来在vim中键入`Markdown Preview`应该可以出现预览的，可是却报错
+进入`~/.vim/plugged/youcompleteme`，运行
 ```
-E488: Traling Characters
+python3 install.py
 ```
+安装服务器，然后就可以成功使用markdown了，预览会在浏览器里面生成。
+
+使用方法是在vim里面运行MarkdownPreview命令。
 
