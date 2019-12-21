@@ -18,4 +18,5 @@ Reference: https://andela.com/insights/configuring-vim-and-tmux-to-boost-your-pr
 在NerdTree中，使用`o`打开文件，使用`i`打开上下分割的窗口，使用`s`打开左右分割窗口。
 
 ## 添加拓展
-[Markdown](./markdown.preview)
+[Markdown](./markdown.md)<br>
+[LaTex](./latex.md)
