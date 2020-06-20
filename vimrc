@@ -38,7 +38,7 @@ Plug 'ervandew/supertab'
 
 "{{ Intellisense and autocomplete
 
-Plug 'valloric/youcompleteme', { 'do': './install.py --all' }
+Plug 'valloric/youcompleteme', { 'do': 'python3 install.py --all' }
 
   " YCM configuration file 
   let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
@@ -200,6 +200,26 @@ Plug 'tpope/vim-surround'
 
 "}}
 
+"{{ vimtex
+Plug 'lervag/vimtex'
+
+let g:tex_flavor = 'latex'
+
+" use vimtex as default compiler
+let g:vimtex_compiler_latexmk_engines={'_':'-xelatex'}
+let g:vimtex_compiler_latexrun_engines={'_':'xelatex'}
+
+" use zathura as the default pdf reviewer
+let g:vimtex_view_method='zathura'
+
+" show the compiler hint
+let g:vimtex_quickfix_mode = 1
+
+" hide the last two lines
+set conceallevel=1
+
+let g:tex_conceal='abdmg'
+"}}
 
 "{{ Extras
 
@@ -219,6 +239,22 @@ Plug 'iamcco/markdown-preview.vim'
 if exists('s:first_init')
   PlugInstall
 end
+
+"Plug 'lervag/vimtex'
+Plug 'vim-latex/vim-latex'
+" REQUIRED. This makes vim invoke Latex-Suite when you open a tex file.
+filetype plugin on
+" IMPORTANT: win32 users will need to have 'shellslash' set so that latex
+" can be called correctly.
+set shellslash
+
+" OPTIONAL: This enables automatic indentation as you type.
+filetype indent on
+
+" OPTIONAL: Starting with Vim 7, the filetype of empty .tex files defaults to
+" 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
+" The following changes the default filetype back to 'tex':
+let g:tex_flavor='latex'
 
 call plug#end()
 
@@ -362,4 +398,5 @@ cnoreabbrev Q q
 cnoreabbrev X x
 
 "}}
+
 
