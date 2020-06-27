@@ -208,6 +208,9 @@ let g:tex_flavor = 'latex'
 " use vimtex as default compiler
 let g:vimtex_compiler_latexmk_engines={'_':'-xelatex'}
 let g:vimtex_compiler_latexrun_engines={'_':'xelatex'}
+" use pdflatex
+"let g:vimtex_compiler_latexmk_engines={'_':'-pdf'}
+"let g:vimtex_compiler_latexrun_engines={'_':'pdf'}
 
 " use zathura as the default pdf reviewer
 let g:vimtex_view_method='zathura'
