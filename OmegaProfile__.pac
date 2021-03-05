@@ -4698,7 +4698,6 @@ var FindProxyForURL = function(init, profiles) {
         if (scheme === "http" && url.indexOf("news.omy.sg") >= 0) return "+GFWed";
         if (scheme === "http" && url.indexOf("showbiz.omy.sg") >= 0) return "+GFWed";
         if (/(?:^|\.)on\.cc$/.test(host)) return "+GFWed";
-        if (/(?:^|\.)onedrive\.live\.com$/.test(host)) return "+GFWed";
         if (/(?:^|\.)onion\.city$/.test(host)) return "+GFWed";
         if (scheme === "http" && url.indexOf(".onlinecha.com") >= 0) return "+GFWed";
         if (/(?:^|\.)onlineyoutube\.com$/.test(host)) return "+GFWed";
